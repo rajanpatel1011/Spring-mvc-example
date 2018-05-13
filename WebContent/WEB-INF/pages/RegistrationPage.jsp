@@ -7,21 +7,22 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="sf" %>
  <h2>This is Customer Registration Page</h2>
- 	<form action="storeCustomer" method="post">
+ 	<sf:form action="storeCustomer" method="post" commandName="cust">
  	<p>
- 	Enter Customer id <input type="text" name="id">
+ 	Enter Customer id <sf:input path="id"/>
  	</p>
  		<p>
- 	Enter Customer Name <input type="text" name="name">
+ 	Enter Customer Name <sf:input path="name"/>
  	</p>	<p>
- 	Enter Customer password <input type="password" name="pwd">
+ 	Enter Customer password <sf:password path="password"/>
  	</p>	<p>
- 	Enter Customer age <input type="text" name="age">
+ 	Enter Customer age <sf:input path="age"/>
  	</p>
  	<p>
- 	<input type="submit" value="submit">
+ 	<input type="submit" value="submit"/>
  	</p>
- 	</form>
+ 	</sf:form>
 </body>
 </html>
