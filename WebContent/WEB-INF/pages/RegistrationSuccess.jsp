@@ -6,16 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
-<h2>
-Welcome to Spring MVC Web Application</h2>
-<hr/>
-<h3>
-you have logged on ${obj}
-</h3>
-<h3>Click here for login
-</h3>
-<a href="login">Login Page</a>
-<a href="customerRegistration">Registration Pages</a>
-</body>
+<body><div>
+Hello Customer id = ${customerObj.id}  and name ${customerObj.name}
+</div></body>
 </html>
